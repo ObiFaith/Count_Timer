@@ -21,9 +21,9 @@ const TimerDisplay = ({isTimer, seconds, minutes, hours, totalSec, setTotalSec})
 
   return (
     <div className="*:bg-brown-400 *:rounded-full *:py-0.5 flex *:w-full gap-2 *:font-medium py-8">
-      <div className="">{!isTimer ? hours : displayHours} <span className="text-yellow-800">hours</span></div>
-      <div className="">{!isTimer ? minutes : displayMins} <span className="text-yellow-800">mins</span></div>
-      <div className="">{!isTimer ? seconds : displaySecs} <span className="text-yellow-800">secs</span></div>
+      <div className="">{displayHours} <span className="text-yellow-800">hours</span></div>
+      <div className="">{displayMins} <span className="text-yellow-800">mins</span></div>
+      <div className="">{displaySecs} <span className="text-yellow-800">secs</span></div>
     </div>
   )
   }
